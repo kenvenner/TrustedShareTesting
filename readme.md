@@ -65,3 +65,13 @@ Make sure you install the selenium drivers in a folder that is in your PATH
 | utcstarttime | datetimezone | None | defines the UTC start time to start processing - we will wait until this time arrives - used to kick off a coordinate load test |
 | startinmin | int | 0 | defines the number of minutes in the future to start running, which returns back the command for others to execute - see utcstarttime |
 | browser |  | chrome | defines which browser we are using to automate with (chrome, ff, firefox) |
+
+## MacOS
+- Open a Terminal
+- Go to the directory where the python programs exist
+- Validate you are in the right directory by running the directory command:  ls
+-- you should see in the listing "ts_test.py", if not - you are not in the right directory
+- run the following command line to start up a instance of the program
+--  ./run.sh instnum=1, where instnum is a number of the instances of the program
+- appropriate number of browsers start up and the test will run in each of them
+- for more command line options see table above
